@@ -1,6 +1,6 @@
 from airflow import dag
 from datetime import datetime,timedelta
-from airflow.operators import PythonOperator
+from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
 from twitter_etl import twitter_etl
 
@@ -22,5 +22,5 @@ with dag(
         python_callable = twitter_etl,
         dag = dag
     )
-
+#if you want you can save the data in s3 by adding a necessary config for s3 bucket
 run_etl
