@@ -1,6 +1,3 @@
-Creating a README file for a Twitter data pipeline using Apache Airflow to fetch data from the Twitter API and save it as a CSV file is a good practice to document your project. Below is an example of what you might include in your README file:
-
----
 
 # Twitter Data Pipeline using Apache Airflow
 
